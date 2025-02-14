@@ -97,8 +97,8 @@ body {
 
 #girlfriend, #me {
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
 }
 
 #girlfriend::after, #me::after {
@@ -143,4 +143,17 @@ body {
     border-radius: 10px;
     width: 80%;
     max-width: 400px;
+}/* Resimlerinizi yuvarlak yapmak için CSS kodu */
+#girlfriend, #me {
+    position: absolute;
+    width: 75px; /* Resmin genişliği */
+    height: 75px; /* Resmin yüksekliği */
+    border-radius: 750%; /* Tamamen yuvarlak yapmak için */
+    overflow: hidden; /* Resim kenarlardan taşmasın diye */
+}body {
+    background-color: #f0f0f0; /* Daha açık bir gri tonu */
+    /* veya */
+    background-color: white; /* Tamamen beyaz */
+}body {
+    filter: brightness(2); /* Tüm sayfanın parlaklığını %10 artırır */
 }
